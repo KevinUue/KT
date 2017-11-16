@@ -24,7 +24,7 @@ c = 0
 with open('kttekst.txt', 'r' )as e:
     for line in e:
         words = line.split()
-        c += len(words) > 5
+        c += len(words) < 5
 print('Sõnade arv mis on väiksemad kui 5: ')
 print(c)
 
